@@ -1,0 +1,310 @@
+/* Style principal pour la section pharmacie-info */
+.pharmacy-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #ffffff; /* couleur de fond douce */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Texte de la pharmacie */
+  .pharmacy-text {
+    flex: 1;
+    padding-right: 30px;
+    max-width: 60%; /* Empêche le texte de trop s'élargir */
+  }
+  
+  .pharmacy-text h2 {
+    font-size: 2.5rem;
+    color: #3e9b55;
+    margin-bottom: 50px;
+  }
+  
+  .pharmacy-text p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 30px;
+  }
+  
+  .pharmacy-text p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Image de la pharmacie */
+  .pharmacy-image {
+    flex: 1;
+    max-width: 40%;
+    text-align: center;
+  }
+  
+  .pharmacy-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Assurez-vous que l'affichage reste responsive */
+  @media (max-width: 768px) {
+    .pharmacy-info {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .pharmacy-text,
+    .pharmacy-image {
+      max-width: 100%;
+    }
+  }
+  
+  /* Style principal pour la section pharmacie-info */
+.pharmacy-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #ffffff; /* couleur de fond douce */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Texte de la pharmacie */
+  .pharmacy-text {
+    flex: 1;
+    padding-right: 30px;
+    max-width: 60%; /* Empêche le texte de trop s'élargir */
+  }
+  
+  .pharmacy-text h2 {
+    font-size: 2.5rem;
+    color: #3e9b55;
+    margin-bottom: 50px;
+  }
+  
+  .pharmacy-text p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 30px;
+  }
+  
+  .pharmacy-text p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Image de la pharmacie */
+  .pharmacy-image {
+    flex: 1;
+    max-width: 40%;
+    text-align: center;
+  }
+  
+  .pharmacy-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Assurez-vous que l'affichage reste responsive */
+  @media (max-width: 768px) {
+    .pharmacy-info {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .pharmacy-text,
+    .pharmacy-image {
+      max-width: 100%;
+    }
+  }
+  
+  /*design des blocs*/
+  /* SECTION CONTAINER */
+.natural-medicine {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(to bottom, #e0f7e9, #ffffff); /* Gradient */
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #2b8a3e; /* Vert foncé */
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+/* CARD CONTAINER */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Trois colonnes */
+  gap: 2rem;
+}
+
+.card {
+  background: linear-gradient(to bottom, #28a745, #34ce57); /* Vert dégradé */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  color: white;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon img {
+  width: 50px;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.card-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.card-button {
+  background-color: white;
+  color: #28a745;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #218838;
+  color: white;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes pour tablettes */
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr; /* Une colonne pour mobiles */
+  }
+}
+
+/* SECTION PRINCIPALE */
+.newsletter-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: #c4d2c9;
+}
+
+/* BLOCS IMAGE */
+.image-block {
+  position: relative;
+  flex: 1;
+}
+
+.image-block img {
+  width: 70%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-left: 80px;
+}
+
+.image-text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.overlay-line {
+  margin-bottom: 0.5rem;
+}
+
+/* BLOCS NEWSLETTER */
+.newsletter-block {
+  flex: 1;
+  text-align: left;
+}
+
+.newsletter-block h2 {
+  font-size: 2.5rem;
+  color: #1d7c33; /* Couleur verte */
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.newsletter-form button {
+  background-color: #16804d; /* Vert */
+  color: white;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #1a642a; /* Vert foncé */
+}
+
+.arrow-icon {
+  font-size: 1.5rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 700px) {
+  .newsletter-section {
+    flex-direction: column;
+  }
+
+
+  .newsletter-block h2 {
+    text-align: center;
+  }
+}

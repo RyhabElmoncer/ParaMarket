@@ -1,0 +1,28 @@
+.slider {
+    width: 100%; /* Prend toute la largeur du parent */
+    height: 550px; /* Fixez une hauteur pour le slider */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Toutes les slides sont invisibles par défaut */
+    transition: opacity 1s ease; /* Transition en douceur */
+  }
+  
+  .slide.active {
+    opacity: 1; /* Rendre l'image active visible */
+    z-index: 1; /* La slide active est au-dessus des autres */
+  }
+  
+  img {
+    width: 100%; /* Toutes les images prennent la largeur du slider */
+    height: 100%; /* Toutes les images prennent la hauteur du slider */
+    object-fit: cover; /* Ajuste les images pour qu'elles remplissent l'espace */
+  }
+  

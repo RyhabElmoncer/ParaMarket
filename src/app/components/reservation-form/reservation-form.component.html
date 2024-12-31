@@ -1,0 +1,47 @@
+<div class="reservation-form-container">
+  <h2>Formulaire de Réservation</h2>
+
+  <form [formGroup]="reservationForm" (ngSubmit)="onSubmit()">
+    <!-- Nom et Prénom -->
+    <div class="form-group">
+      <label for="nomPrenom">Nom et Prénom</label>
+      <input id="nomPrenom" formControlName="nomPrenom" type="text" placeholder="Votre nom et prénom">
+      <div *ngIf="reservationForm.get('nomPrenom')?.touched && reservationForm.get('nomPrenom')?.invalid" class="error-message">
+        <small *ngIf="reservationForm.get('nomPrenom')?.errors?.['required']">Le nom et prénom sont requis.</small>
+        <small *ngIf="reservationForm.get('nomPrenom')?.errors?.['minlength']">Le nom et prénom doivent avoir au moins 5 caractères.</small>
+      </div>
+    </div>
+
+    <!-- Numéro de téléphone -->
+    <div class="form-group">
+      <label for="phone">Numéro de téléphone</label>
+      <input id="phone" formControlName="phone" type="text" placeholder="Votre numéro de téléphone" maxlength="8">
+      <div *ngIf="reservationForm.get('phone')?.touched && reservationForm.get('phone')?.invalid" class="error-message">
+        <small *ngIf="reservationForm.get('phone')?.errors?.['required']">Le numéro de téléphone est requis.</small>
+        <small *ngIf="reservationForm.get('phone')?.errors?.['pattern']">Veuillez entrer un numéro de téléphone valide à 8 chiffres.</small>
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input id="email" formControlName="email" type="email" placeholder="Votre email">
+      <div *ngIf="reservationForm.get('email')?.touched && reservationForm.get('email')?.invalid" class="error-message">
+        <small *ngIf="reservationForm.get('email')?.errors?.['required']">L'email est requis.</small>
+        <small *ngIf="reservationForm.get('email')?.errors?.['email']">Veuillez entrer un email valide.</small>
+      </div>
+    </div>
+
+    <!-- Adresse -->
+    <div class="form-group">
+      <label for="adresse">Adresse</label>
+      <textarea id="adresse" formControlName="adresse" placeholder="Votre adresse"></textarea>
+      <div *ngIf="reservationForm.get('adresse')?.touched && reservationForm.get('adresse')?.invalid" class="error-message">
+        <small *ngIf="reservationForm.get('adresse')?.errors?.['required']">L'adresse est requise.</small>
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" [disabled]="reservationForm.invalid">Soumettre</button>
+  </form>
+</div>

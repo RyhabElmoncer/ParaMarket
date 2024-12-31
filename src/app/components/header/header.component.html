@@ -1,0 +1,24 @@
+<header>
+  <div class="header-content">
+    <div class="logo">
+      <img src="./assets/image/logo.PNG" alt="Logo" />
+    </div>
+    <div class="icons">
+      <!-- Icône utilisateur -->
+      <div class="search-bar">
+        <input type="text" placeholder="Rechercher" />
+        <button class="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+      <span class="user-icon">
+        <img src="./assets/image/user.png" alt="User Icon" (click)="navigateToLogin()"/>
+      </span>
+      <!-- Icône panier -->
+      <span class="cart-icon" (click)="navigateToCart()">
+        <img src="./assets/image/panier.png" alt="Cart Icon" />
+        <span class="cart-count">{{ cartCount }}</span> <!-- Dynamically display cart count -->
+      </span>
+    </div>
+  </div>
+</header>

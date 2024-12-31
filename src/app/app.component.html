@@ -1,0 +1,37 @@
+<app-header></app-header>
+<app-categories></app-categories>
+
+<router-outlet></router-outlet>
+
+<!-- Afficher uniquement si "showMainContent" est vrai -->
+<div *ngIf="showMainContent">
+  <app-slider></app-slider>
+
+  <!-- Nouveau bloc de contenu sous le slider -->
+  <div class="pharmacy-info">
+    <div class="pharmacy-text">
+      <h2>Votre Para pharmacie Green Parasho</h2>
+      <p>
+        <b>La Para pharmacie Green Parasho</b> propose de nombreux services : produits bébés et laits infantiles, hygiène intime,
+        produits dentaires…
+      </p>
+      <p>
+        <b>Du matériel médical est disponible à la vente et location</b> : lit médicalisé, semelles orthopédiques, contention…
+      </p>
+      <p>
+        Retrouvez également nos <b>produits de médecine naturelle</b> : micronutrition, homéopathie, aromathérapie et huiles
+        essentielles.
+      </p>
+      <p>
+        Profitez de notre service pratique et rapide d’ordonnance en ligne, déposez-la via notre formulaire de contact et choisissez
+        l’heure de retrait en officine à La Suze-sur-Sarthe.
+      </p>
+    </div>
+
+    <!-- Image de la pharmacie -->
+    <div class="pharmacy-image">
+      <img src="./assets/image/para.jpg" alt="Pharmacie" />
+    </div>
+  </div>
+  <app-contact></app-contact>
+</div>

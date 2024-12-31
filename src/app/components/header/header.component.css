@@ -1,0 +1,226 @@
+/* Top bar */
+.top-bar {
+  background-color: #1d7c33; /* Vert */
+  color: white;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
+}
+
+.install-btn {
+  background-color: white;
+  color: #008000;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.install-btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* Header content */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f1f8e9;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.search-bar .search-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 70px;
+  width:130px ;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Styles pour l'icône utilisateur */
+.user-icon img,
+.cart-icon img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-icon img:hover,
+.cart-icon img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Icône panier avec compteur */
+.cart-icon {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 2px 6px;
+}
+
+/* Style principal pour la section pharmacie-info */
+.pharmacy-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #ffffff; /* couleur de fond douce */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Texte de la pharmacie */
+  .pharmacy-text {
+    flex: 1;
+    padding-right: 30px;
+    max-width: 60%; /* Empêche le texte de trop s'élargir */
+  }
+  
+  .pharmacy-text h2 {
+    font-size: 2.5rem;
+    color: #1d7c33;
+    margin-bottom: 50px;
+  }
+  
+  .pharmacy-text p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 30px;
+  }
+  
+  .pharmacy-text p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Image de la pharmacie */
+  .pharmacy-image {
+    flex: 1;
+    max-width: 40%;
+    text-align: center;
+  }
+  
+  .pharmacy-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Assurez-vous que l'affichage reste responsive */
+  @media (max-width: 768px) {
+    .pharmacy-info {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .pharmacy-text,
+    .pharmacy-image {
+      max-width: 100%;
+    }
+  }
+  
+  /* Style principal pour la section pharmacie-info */
+.pharmacy-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #ffffff; /* couleur de fond douce */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Texte de la pharmacie */
+  .pharmacy-text {
+    flex: 1;
+    padding-right: 30px;
+    max-width: 60%; /* Empêche le texte de trop s'élargir */
+  }
+  
+  .pharmacy-text h2 {
+    font-size: 2.5rem;
+    color: #3e9b55;
+    margin-bottom: 50px;
+  }
+  
+  .pharmacy-text p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 30px;
+  }
+  
+  .pharmacy-text p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Image de la pharmacie */
+  .pharmacy-image {
+    flex: 1;
+    max-width: 40%;
+    text-align: center;
+  }
+  
+  .pharmacy-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Assurez-vous que l'affichage reste responsive */
+  @media (max-width: 768px) {
+    .pharmacy-info {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .pharmacy-text,
+    .pharmacy-image {
+      max-width: 100%;
+    }
+  }
+  

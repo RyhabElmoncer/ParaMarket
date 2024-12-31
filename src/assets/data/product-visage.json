@@ -1,0 +1,43 @@
+[
+    {
+      "name": "SVR SUN SECURE Fluide Toucher Sec SPF50+",
+      "price": 55.00,
+      "image": "assets/image/svr.jpg"
+    },
+    {
+      "name": "DUCRAY KERACNYL SÉRUM 30ML",
+      "price": 33.00,
+      "image": "assets/image/ducray.jpg"
+    },
+    {
+      "name": "SVR SEBIACLEAR SERUM 30ML",
+      "price": 29.50,
+      "image": "assets/image/sv2.jpg"
+    },
+    {
+      "name": "SVR SEBIACLEAR ECRAN CREME SPF50 MATIFIANTE",
+      "price": 47.00,
+      "image": "assets/image/svr3.jpg"
+    },
+    {
+      "name": "CLINIC WAY crème anti-rides de jour N°2 SPF 20",
+      "price": 60.00,
+      "image": "assets/image/p1.jpg"
+    },
+    {
+      "name": "CLINIC WAY crème anti-rides",
+      "price": 60.00,
+      "image": "assets/image/p3.jpg"
+    },
+    {
+      "name": "AVENE FLUIDE MINÉRAL TEINTÉ SPF50+ 40ML",
+      "price": 60.00,
+      "image": "assets/image/p4.jpg"
+    },
+    {
+      "name": "Pharmaceris W Albucin crème de jour SPF50+ 30ML",
+      "price": 50.00,
+      "image": "assets/image/p5.jpg"
+    }
+  ]
+  

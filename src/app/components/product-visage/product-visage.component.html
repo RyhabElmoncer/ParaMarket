@@ -1,0 +1,20 @@
+<!-- SHOP SECTION -->
+<section class="shop container">
+    <h2 class="section-title">Produits de Visage</h2>
+  
+ <!-- CONTENT -->
+ <div class="shop-content">
+   <!-- Itérer sur les produits -->
+   <div *ngFor="let product of products" class="product-box">
+     <img [src]="product.image" alt="{{ product.name }}" class="product-img">
+     <div class="product-info">
+       <h2 class="product-title">{{ product.name }}</h2>
+       <span class="product-price">{{ product.price }} TND</span>
+       <button class="btn-add-to-cart" (click)="addToCart(product)">
+         <i class="bx bx-shopping-bag"></i> Ajouter au Panier
+       </button>
+     </div>
+   </div>
+ </div>
+  </section>
+  

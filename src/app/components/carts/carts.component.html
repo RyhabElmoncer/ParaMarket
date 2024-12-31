@@ -1,0 +1,19 @@
+<section class="cart container">
+  <h2 class="cart-title">Votre Panier</h2>
+
+  <div *ngIf="cartItems.length > 0; else emptyCart">
+    <div *ngFor="let item of cartItems" class="cart-item">
+      <img [src]="item.image" alt="{{ item.name }}" class="cart-item-image">
+      <div class="cart-item-details">
+        <h3 class="cart-item-name">{{ item.name }}</h3>
+        <p class="cart-item-price">{{ item.price }} TND</p>
+        <button class="cart-item-remove-btn" (click)="removeFromCart(item.id)">Supprimer</button>
+      </div>
+    </div>
+    <button class="btn-clear-cart" (click)="clearCart()">Vider le Panier</button>
+  </div>
+
+  <ng-template #emptyCart>
+    <p class="empty-cart-message">Votre panier est vide.</p>
+  </ng-template>
+</section>
