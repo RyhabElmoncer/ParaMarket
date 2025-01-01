@@ -24,5 +24,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<img width="949" alt="home" src="https://github.com/user-attachments/assets/9bdf5f96-94dc-4f27-b3a9-524675dfc1d0" />
+To<img width="951" alt="liste" src="https://github.com/user-attachments/assets/0ca1deaa-186d-4d4f-b172-8df9f7c77113" /><img width="933" alt="produit" src="https://github.com/user-attachments/assets/06cfec83-ceb9-4d66-b444-8dd0b3386550" />
+
+ get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 "# ParaMarket" 
